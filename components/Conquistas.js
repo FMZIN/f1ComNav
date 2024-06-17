@@ -53,7 +53,11 @@ export default function Home() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fff',
+    alignItems: 'center',
+  },
+  fundo2:{
+    flex: 1,
+    justifyContent: 'center',
     alignItems: 'center',
   },
   container2: {
@@ -63,10 +67,11 @@ const styles = StyleSheet.create({
     opacity: "50",
     marginTop: 20,
     marginBottom: 20,
+    borderRadius: 10,
   },
   container3: {
     marginLeft: 20,
-    marginRight: 20
+    marginRight: 20,
   },
   foto: {
     width: 350,
@@ -105,8 +110,5 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     fontWeight: "bold",
     fontSize: 15
-  },
- fundo:{
-    flex: 1
   },
 });

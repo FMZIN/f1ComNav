@@ -2,10 +2,11 @@ import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 import { Image } from 'expo-image';
 
 import perfil from '../assets/perfil.jpg';
+import fundo from '../assets/fundopng.png';
 
 export default function Home() {
   return (
-    // <ImageBackground source={fundo} style={styles.fundo}>
+    <ImageBackground source={fundo} style={styles.fundo}>
       <View style={styles.container}>
         <Image
           source={perfil}
@@ -17,7 +18,7 @@ export default function Home() {
 
         </View>
       </View>
-    // </ImageBackground>
+    </ImageBackground>
   );
 }
 
@@ -38,18 +39,21 @@ const styles = StyleSheet.create({
   },
   nome:{
     fontSize: 20,
-    textAlign: "center"
+    textAlign: "center",
+    color: "white"
   },
   descricao:{
     marginTop: 5,
     fontSize: 15,
     textAlign: "center",
+    color: "white"
   },
   descricao2:{
-    backgroundColor: "grey",
+    backgroundColor: "rgba(0, 0, 0, 0.8)",
     marginLeft: 20,
     marginRight: 20,
     marginTop: 30,
-    borderRadius: 10
+    borderRadius: 10,
+    padding: 10
   },
 });
