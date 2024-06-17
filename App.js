@@ -12,7 +12,7 @@ export default function App() {
         <Tabs.Navigator
           screenOptions={{
             tabBarStyle:{
-              backgroundColor: "#eab990"
+              backgroundColor: "#eab990",
             },
             tabBarLabelStyle:{
               fontSize: 13,
@@ -22,6 +22,16 @@ export default function App() {
 
             tabBarActiveBackgroundColor:"#ffffff",
             tabBarInactiveBackgroundColor:"#c42a17",
+
+            headerStyle:{
+              backgroundColor: "#c42a17"
+            },
+
+            headerTitleAlign: "center",
+
+            headerTitleStyle:{
+              color: "white"
+            }
             
           }}
         >

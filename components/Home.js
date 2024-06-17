@@ -6,7 +6,7 @@ import fundo from '../assets/fundo.jpg';
 
 export default function Home() {
   return (
-    // <ImageBackground source={fundo} style={styles.fundo}>
+    <ImageBackground source={fundo} style={styles.fundo}>
       <View style={styles.container}>
         <Image
           source={perfil}
@@ -15,22 +15,21 @@ export default function Home() {
         <View style={styles.descricao2}>
           <Text style={styles.nome}>Yuki Tsunoda</Text>
           <Text style={styles.descricao}>Yuki Tsunoda é um piloto japonês de corridas de automóveis, nascido em 11 de maio de 2000, conhecido por competir na Fórmula 1. Ele estreou na Fórmula 1 na temporada de 2021, competindo pela equipe AlphaTauri.</Text>
+
         </View>
       </View>
-    // </ImageBackground>
+    </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
   fundo:{
-    width: 250,
-    height: 250,
+    flex: 1
   },
   perfil:{
     width: 250,
