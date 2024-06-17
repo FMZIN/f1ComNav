@@ -17,45 +17,48 @@ export default function Sobre() {
           <Text style={styles.descricao}>Yuki Tsunoda, nascido em 2000 no Japão, iniciou sua carreira no karting em 2010. Ele se destacou na Fórmula 4 Japonesa, terminando em terceiro em 2017. Após competir na Fórmula 3 em 2019 e na Fórmula 2 em 2020, onde também ficou em terceiro, Tsunoda estreou na Fórmula 1 pela Scuderia AlphaTauri em 2021. Ele mostrou talento e velocidade, enfrentando alguns desafios típicos de um novato.</Text>
         </View>
 
-        <View style={styles.container3}>
-          <Image source={foto1} style={styles.foto1}/>
-          <View>
-            <Text style={styles.altura}>Altura</Text>
+        <View style={styles.container4}>
+          <View style={styles.container3}>
+            <Image source={foto1} style={styles.foto1}/>
+            <View>
+              <Text style={styles.altura}>Altura</Text>
+            </View>
+            <View>
+              <Text style={styles.altura2}>Com 1,59 m de altura, Tsunoda é um dos pilotos mais baixos da Fórmula 1 moderna.</Text>
+            </View>
           </View>
-          <View>
-            <Text style={styles.altura2}>Com 1,59 m de altura, Tsunoda é um dos pilotos mais baixos da Fórmula 1 moderna.</Text>
+
+          <View style={styles.container3}>
+            <Image source={foto2} style={styles.foto1}/>
+            <View>
+              <Text style={styles.altura}>Treinamento Diferenciado</Text>
+            </View>
+            <View>
+              <Text style={styles.altura2}>Como muitos jovens de sua geração, Tsunoda gosta de videogames e já mencionou que jogar simuladores de corrida ajudou em seu treinamento.</Text>
+            </View>
+          </View>
+
+          <View style={styles.container3}>
+            <Image source={foto3} style={styles.foto1}/>
+            <View>
+              <Text style={styles.altura}>Gosto pela Culinária</Text>
+            </View>
+            <View>
+              <Text style={styles.altura2}>Yuki gosta de cozinhar e frequentemente compartilha fotos de suas refeições caseiras em suas redes sociais.</Text>
+            </View>
+          </View>
+
+          <View style={styles.container3}>
+            <Image source={foto4} style={styles.foto1}/>
+            <View>
+              <Text style={styles.altura}>Queridinho da Honda</Text>
+            </View>
+            <View>
+              <Text style={styles.altura2}>Tsunoda foi fortemente apoiado pela Honda, sendo parte de seu programa de desenvolvimento de pilotos desde cedo, o que facilitou sua entrada na Fórmula 1.</Text>
+            </View>
           </View>
         </View>
 
-        <View style={styles.container3}>
-          <Image source={foto2} style={styles.foto1}/>
-          <View>
-            <Text style={styles.altura}>Treinamento Diferenciado</Text>
-          </View>
-          <View>
-            <Text style={styles.altura2}>Como muitos jovens de sua geração, Tsunoda gosta de videogames e já mencionou que jogar simuladores de corrida ajudou em seu treinamento.</Text>
-          </View>
-        </View>
-
-        <View style={styles.container3}>
-          <Image source={foto3} style={styles.foto1}/>
-          <View>
-            <Text style={styles.altura}>Gosto pela Culinária</Text>
-          </View>
-          <View>
-            <Text style={styles.altura2}>Yuki gosta de cozinhar e frequentemente compartilha fotos de suas refeições caseiras em suas redes sociais.</Text>
-          </View>
-        </View>
-
-        <View style={styles.container3}>
-          <Image source={foto4} style={styles.foto1}/>
-          <View>
-            <Text style={styles.altura}>Queridinho da Honda</Text>
-          </View>
-          <View>
-            <Text style={styles.altura2}>Tsunoda foi fortemente apoiado pela Honda, sendo parte de seu programa de desenvolvimento de pilotos desde cedo, o que facilitou sua entrada na Fórmula 1.</Text>
-          </View>
-        </View>
 
       </View>
     </ScrollView>
@@ -73,7 +76,10 @@ const styles = StyleSheet.create({
   container3: {
     marginTop: 20,
     margin: 10,
-    flexDirection: "row",
+    flexDirection: "column",
+    flex: 1
+  },
+  container4: {
   },
   nome: {
     fontSize: 20,
@@ -100,9 +106,9 @@ const styles = StyleSheet.create({
   altura: {
     marginLeft: 10,
     fontWeight: "bold",
-    fontSize: 15
+    fontSize: 15,
   },
   altura2: {
-    marginLeft: 10
+    marginLeft: 10,
   }
 });

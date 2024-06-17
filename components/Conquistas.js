@@ -1,11 +1,12 @@
 import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 import { Image } from 'expo-image';
 
-import fundo from '../assets/fundo3.jpg';
 import foto5 from '../assets/foto5.jpg';
 import foto6 from '../assets/foto6.jpg';
 import foto7 from '../assets/foto7.jpg';
 import foto8 from '../assets/foto8.jpg';
+import fundo from '../assets/fundopng.png';
+
 import { ScrollView } from 'react-native-web';
 
 export default function Home() {
@@ -58,10 +59,10 @@ const styles = StyleSheet.create({
   container2: {
     textAlign: "center",
     alignItems: "center",
-    backgroundColor: "black",
+    backgroundColor: "rgba(0, 0, 0, 0.9)",
     opacity: "50",
     marginTop: 20,
-    marginBottom: 20
+    marginBottom: 20,
   },
   container3: {
     marginLeft: 20,
