@@ -17,10 +17,10 @@ export default function App() {
             tabBarLabelStyle:{
               fontSize: 13,
             },
-            tabBarActiveTintColor:"#c42a17",
+            tabBarActiveTintColor:"#ffffff",
             tabBarInactiveTintColor:"#ffffff",
 
-            tabBarActiveBackgroundColor:"#ffffff",
+            tabBarActiveBackgroundColor:"black",
             tabBarInactiveBackgroundColor:"#c42a17",
 
             headerStyle:{

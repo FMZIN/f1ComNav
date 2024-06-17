@@ -5,7 +5,7 @@ import foto5 from '../assets/foto5.jpg';
 import foto6 from '../assets/foto6.jpg';
 import foto7 from '../assets/foto7.jpg';
 import foto8 from '../assets/foto8.jpg';
-import fundo from '../assets/fundopng.png';
+import fundo from '../assets/pngfundo2.png';
 
 import { ScrollView } from 'react-native-web';
 
@@ -18,10 +18,10 @@ export default function Home() {
             <View style={styles.container2}>
               <Text style={styles.escrita3}>Yuki Tsunoda em números</Text>
               <Text style={styles.escrita2}>Yuki Tsunoda em correu inúmeras corridas na fórmula 4, na fórmula 3 correu cerca de 16-18 corridas, na fórmula 2 cerca de 24 corridas, já na fórmula 1 correu cerca de 23 corridas até o momento, na temporada final de 2021</Text>
-              <Text style={styles.descricao3}>🏆 94 Corridas Disputadas</Text>
-              <Text style={styles.descricao3}>🏆 5 Posições no Podio</Text>
-              <Text style={styles.descricao3}>🏆 2 Vitorias</Text>
-              <Text style={styles.descricao4}>🏆 0 Campeão Mundial</Text>
+              <Text style={styles.descricao3}>🏆 <Text style={styles.descricao5}>94</Text> Corridas Disputadas</Text>
+              <Text style={styles.descricao3}>🏆 <Text style={styles.descricao5}>5</Text> Posições no Podio</Text>
+              <Text style={styles.descricao3}>🏆 <Text style={styles.descricao5}>2</Text> Vitorias</Text>
+              <Text style={styles.descricao4}>🏆 <Text style={styles.descricao5}>0</Text> Campeão Mundial</Text>
             </View>
           </View>
 
@@ -107,6 +107,13 @@ const styles = StyleSheet.create({
     color: "#969696",
     marginTop: 10,
     marginBottom: 10,
+    borderRadius: 10,
+    fontWeight: "bold",
+    fontSize: 15
+  },
+  descricao5:{
+    color: "#DCBA1E",
+    marginTop: 10,
     borderRadius: 10,
     fontWeight: "bold",
     fontSize: 15

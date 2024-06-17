@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 import { Image } from 'expo-image';
 
 import perfil from '../assets/perfil.jpg';
-import fundo from '../assets/fundopng.png';
+import fundo from '../assets/pngfundo.png';
 
 export default function Home() {
   return (
